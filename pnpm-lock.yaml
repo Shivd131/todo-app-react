@@ -17,6 +17,9 @@ dependencies:
   react-redux:
     specifier: ^9.1.0
     version: 9.1.0(@types/react@18.2.73)(react@18.2.0)(redux@5.0.1)
+  react-swipeable:
+    specifier: ^7.0.1
+    version: 7.0.1(react@18.2.0)
   redux:
     specifier: ^5.0.1
     version: 5.0.1
@@ -2083,6 +2086,14 @@ packages:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /react-swipeable@7.0.1(react@18.2.0):
+    resolution: {integrity: sha512-RKB17JdQzvECfnVj9yDZsiYn3vH0eyva/ZbrCZXZR0qp66PBRhtg4F9yJcJTWYT5Adadi+x4NoG53BxKHwIYLQ==}
+    peerDependencies:
+      react: ^16.8.3 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
