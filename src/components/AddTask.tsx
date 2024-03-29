@@ -17,7 +17,7 @@ const AddTask: React.FC = () => {
                 containerClassName="rounded-full"
                 as="button"
                 onClick={handleToggleTaskInput}
-                className=" bg-black text-white flex items-center space-x-2"
+                className=" bg-black text-white space-x-2"
             >
                 {showTaskInput ? 'Hide Task Input' : 'Add Task'}
 

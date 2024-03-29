@@ -9,7 +9,7 @@ import { AuroraBackground } from './components/ui/aurora-background';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
-    <PersistGate persistor={persistor}>
+    <PersistGate persistor={persistor}>{/* persistor to store data in the  local storage */}
       <AuroraBackground className='bg-[#000000]'>
         <App />
       </AuroraBackground>

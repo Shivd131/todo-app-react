@@ -18,7 +18,7 @@ const TaskInput: React.FC = () => {
             setTask('');
         }
     };
-        
+    //on cliking enter handleAddTask will be executed
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
             handleAddTask();
