@@ -11,13 +11,14 @@ const TaskInput: React.FC = () => {
         setTask(e.target.value);
     };
 
+    //dispatches the entered data to the store
     const handleAddTask = () => {
         if (task.trim() !== '') {
             dispatch(addTask(task));
             setTask('');
         }
     };
-
+        
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
             handleAddTask();

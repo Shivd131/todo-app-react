@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import TaskInput from './TaskInput';
 import { HoverBorderGradient } from './ui/hover-border-gradient';
 
+//when this button is clicked, the TaskInput.tsx will be toggled.
+
 const AddTask: React.FC = () => {
     const [showTaskInput, setShowTaskInput] = useState(false);
 

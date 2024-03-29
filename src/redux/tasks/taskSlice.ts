@@ -7,6 +7,7 @@ interface Task {
   done: boolean;
 }
 
+//the state will be an array of tasks
 interface TasksState {
   tasks: Task[];
 }

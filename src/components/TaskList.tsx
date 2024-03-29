@@ -8,10 +8,12 @@ const TaskList: React.FC = () => {
     const tasks = useSelector((state: RootState) => selectTasks(state));
     const dispatch = useDispatch();
 
+    //dispatches the id of the deleted task and deleteTask function is called, filtering out this task.
     const handleDeleteTask = (taskId: number) => {
         dispatch(deleteTask(taskId));
     };
 
+    //on clicking done, the id is sent to the store and thus the value for that particular task is marked true for done.
     const handleToggleTask = (taskId: number) => {
         dispatch(toggleTaskDone(taskId));
     };
