@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTask } from '../redux/tasks/taskSlice'; // Import addTask action from taskSlice
+import { addTask } from '../redux/tasks/taskSlice';
+import { motion } from 'framer-motion'; // Import motion from Framer Motion
 
 const TaskInput: React.FC = () => {
   const [task, setTask] = useState<string>('');
@@ -24,22 +25,29 @@ const TaskInput: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center space-x-2 mt-4">
+    <motion.div // Wrap the input and button with a motion.div
+      className="flex items-center space-x-2 mt-4"
+      initial={{ opacity: 0, y: -20 }} // Initial animation values
+      animate={{ opacity: 1, y: 0 }} // Animation when component mounts
+      transition={{ duration: 0.3, delay: 0.1 }} // Animation transition settings
+    >
       <input
         type="text"
         value={task}
         onChange={handleChange}
-        onKeyPress={handleKeyPress} // Call handleKeyPress on Enter key press
+        onKeyPress={handleKeyPress}
         placeholder="Add a task..."
         className="px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300 flex-grow"
       />
-      <button
+      <motion.button // Wrap the button with a motion.button
         onClick={handleAddTask}
         className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring focus:bg-blue-600"
+        whileHover={{ scale: 1.05 }} // Animation on hover
+        whileTap={{ scale: 0.95 }} // Animation on tap
       >
         Add Task
-      </button>
-    </div>
+      </motion.button>
+    </motion.div>
   );
 };
 
