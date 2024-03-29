@@ -31,16 +31,13 @@
 #### Directions to Install
 
 ```bash
-<br/>
 $ git clone https://github.com/Shivd131/todo-app-react.git
-<br/>
 $ pnpm install
 ```
 
 #### Directions to Run
 
 ```bash
-<br/>
 $ pnpm dev
 ```
 
