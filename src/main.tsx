@@ -4,12 +4,15 @@ import './index.css'
 import { persistor, store } from './redux/store.ts'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
+import { AuroraBackground } from './components/ui/aurora-background';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
-      <PersistGate persistor={persistor}>
+    <PersistGate persistor={persistor}>
+      <AuroraBackground className='bg-[#000000]'>
         <App />
-      </PersistGate>
+      </AuroraBackground>
+    </PersistGate>
   </Provider>,
 )
