@@ -30,19 +30,19 @@
 
 #### Directions to Install
 
-sh
+```bash
 <br/>
 $ git clone https://github.com/Shivd131/todo-app-react.git
 <br/>
 $ pnpm install
-
+```
 
 #### Directions to Run
 
-sh
+```bash
 <br/>
 $ pnpm dev
-
+```
 
 
 <br/>
